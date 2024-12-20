@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { BookList } from "../components/BookList";
 
 export const useBooks = () => {
@@ -6,6 +7,7 @@ export const useBooks = () => {
 
     useEffect(() => {
         setTimeout(() => {
+            console.log("Books:", BookList);
             setBooks(BookList);
         }, 2500);
     }, []);

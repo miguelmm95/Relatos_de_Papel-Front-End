@@ -23,4 +23,4 @@ export const BookList = [
         score: 4.6,
         price: 22
     },
-]
+];

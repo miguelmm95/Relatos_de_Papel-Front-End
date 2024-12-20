@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { BookContext } from './context/BookContext';
-import { BookRouter } from './router/router';
+import { BookRouter } from './router/Router';
+import { Footer } from './components/Footer';
+import { useBooks } from './hooks/useBooks';
 
 function App() {
 
@@ -8,8 +10,7 @@ function App() {
 
   return (
     <BookContext.Provider value={books}>
-      <BookRouter></BookRouter>
-      <Footer />
+      <BookRouter />
     </BookContext.Provider>
   );
 }
