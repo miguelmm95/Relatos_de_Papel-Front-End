@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/BookCard.css";
 
 export const Book = ({title, author, img, score, price }) => {
     return (

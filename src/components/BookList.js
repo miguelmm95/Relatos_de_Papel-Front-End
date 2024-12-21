@@ -23,4 +23,20 @@ export const BookList = [
         score: 4.6,
         price: 22
     },
+    {
+        id: 3,
+        title: "The name of the Wind",
+        author: "Patrick Rothfuss",
+        img: "",
+        score: 4.6,
+        price: 22
+    },
+    {
+        id: 3,
+        title: "The name of the Wind",
+        author: "Patrick Rothfuss",
+        img: "",
+        score: 4.6,
+        price: 22
+    },
 ];
