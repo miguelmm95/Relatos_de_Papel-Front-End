@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { BookContext } from './context/BookContext';
 import { BookRouter } from './router/Router';
-import { Footer } from './components/Footer';
 import { useBooks } from './hooks/useBooks';
 
 function App() {
 
   const books = useBooks();
+  console.log("Books in App:", books);
 
   return (
     <BookContext.Provider value={books}>

@@ -4,6 +4,7 @@ import Landing from "../views/Landing";
 import { Overview } from "../views/Overview";
 import { BookDetails } from "../views/BookDetails";
 import NotFound from "../views/NotFound";
+import { Header } from "../components/Header";
 
 export const BookRouter = () => {
   return (
@@ -17,5 +18,12 @@ export const BookRouter = () => {
     </BrowserRouter>
   );
 };
+
+const Layout = ({children}) => (
+  <>
+    <Header />
+    {children}
+  </>
+);
 
 export default BookRouter;

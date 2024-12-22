@@ -9,6 +9,7 @@ export const useRedirection = (path, delay) => {
             navigate(path);          
         },delay);
 
-        return () => clearTimeout(timer);
     }, [navigate, path, delay]);
 };
+
+export default useRedirection;

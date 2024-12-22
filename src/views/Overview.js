@@ -19,9 +19,11 @@ export const Overview = () => {
                     books.map((book, index) => (
                         <Book
                             key={index}
+                            id={book.id}
                             title={book.title}
                             author={book.author}
                             img={book.img}
+                            synopsis={book.synopsis}
                             score={book.score}
                             price={book.price}
                         />
