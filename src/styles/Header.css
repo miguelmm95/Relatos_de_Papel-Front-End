@@ -2,14 +2,34 @@
     background-color: #474747;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-top: 2px solid rgb(50, 143, 50);
     border-bottom: 2px solid rgb(50, 143, 50);
+    padding: 0 20px;
 }
 
 .header_text{
     color: rgb(50, 143, 50);
     font-weight: bold;
     text-align: center;
+    margin-left: 20px;
+}
+
+.header_searchBar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+  
+.header_searchBar_text {
+    padding: 5px;
+    font-size: 16px;
+}
+  
+.header_searchBar_button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
 }

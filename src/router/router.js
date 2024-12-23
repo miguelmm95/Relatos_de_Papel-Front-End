@@ -5,14 +5,15 @@ import { Overview } from "../views/Overview";
 import { BookDetails } from "../views/BookDetails";
 import NotFound from "../views/NotFound";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 export const BookRouter = () => {
   return (
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/books" element={<Overview />} />
-            <Route path="/books/:id" element={<BookDetails />} />
+            <Route path="/books" element={<Layout><Overview /></Layout>} />
+            <Route path="/books/:id" element={<Layout><BookDetails /></Layout>} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     </BrowserRouter>
@@ -23,6 +24,7 @@ const Layout = ({children}) => (
   <>
     <Header />
     {children}
+    <Footer />
   </>
 );
 

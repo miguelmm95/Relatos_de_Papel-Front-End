@@ -12,7 +12,6 @@ export const Overview = () => {
 
     return (
         <div>
-            <Header />
             <h1 className="overview_title">Books</h1>
             <div className="ovewrview_container">
                 {books.length > 0 ? (
@@ -34,7 +33,6 @@ export const Overview = () => {
             }
 
             </div>
-            <Footer />
         </div>
         
     );
