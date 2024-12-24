@@ -34,7 +34,7 @@
     cursor: pointer;
 }
 
-#header_cart {
+#header_cart_icon {
     font-size: 20px;
     color: white;
     margin-left: 80px;
@@ -44,4 +44,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header_cart_length{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.header_cart_preview{
+    position: absolute;
+    right: 70px;
+    top: 80px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px;
 }

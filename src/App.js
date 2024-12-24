@@ -7,7 +7,6 @@ import { CartProvider } from './context/CartContext';
 function App() {
 
   const books = useBooks();
-  console.log("Books in App:", books);
 
   return (
     <BookContext.Provider value={books}>
