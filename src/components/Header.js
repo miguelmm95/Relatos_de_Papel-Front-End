@@ -8,7 +8,9 @@ export const Header = () => {
         <div className="header_searchBar">
             <input className="header_searchBar_text" type="text" placeholder="Buscar..." />
             <button className="header_searchBar_button">Buscar</button>
+            <i id="header_cart" class="bi bi-cart4"></i>
         </div>
+        
     </div>
   );
 }

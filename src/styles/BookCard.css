@@ -48,3 +48,19 @@
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
+
+#book_card_addToCart{
+    background-color: rgb(50, 143, 50); /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 5px 10px; /* Padding inside button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 10px; /* Space above button */
+    display: block; /* Make the button a block element */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    width: 80px; /* Set a fixed width for the button */
+    text-align: center;
+   
+}
