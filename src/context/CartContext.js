@@ -24,8 +24,42 @@ export const CartProvider = ({children}) => {
         });
     };
 
+    const getTotalPrice = () => {
+        const total = cart.reduce((acc, item) => acc + item.amount * item.price, 0);
+        return total.toFixed(2);
+    };
+
+    const removeItem = (id) => {
+        setCart((prevCart) => {
+            const existingItem = prevCart.find((cartItem => cartItem.id === id));
+            if(existingItem.amount === 1){
+                return prevCart.filter(cartItem => cartItem.id !== id);
+            }else{
+                return prevCart.map(cartItem => {
+                    if(cartItem.id === id){
+                        return {...cartItem, amount: cartItem.amount - 1}
+                    }else{
+                        return cartItem
+                    }
+                });
+            }
+        });
+    };
+
+    const addItem = (id) => {
+        setCart((prevCart) => {
+            return prevCart.map(cartItem => {
+                if(cartItem.id === id){
+                    return {...cartItem, amount: cartItem.amount + 1}
+                }else{
+                    return cartItem
+                }
+            });
+        })
+    };
+
     return(
-        <CartContext.Provider value={{ cart, addToCart, cartLenght: cartLength }}>
+        <CartContext.Provider value={{ cart, addToCart, getTotalPrice, removeItem, addItem, cartLenght: cartLength }}>
             { children }
         </CartContext.Provider>
     );
