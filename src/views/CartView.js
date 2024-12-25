@@ -1,12 +1,18 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const CartView = () => {
     
+    const navigate = useNavigate();
     const { cart, cartLenght } = useContext(CartContext);
     const { getTotalPrice } = useContext(CartContext);
     const { removeItem } = useContext(CartContext);
     const { addItem } = useContext(CartContext);
+
+    const handleNavigate = () => {
+        navigate("/Checkout");
+    };
 
     const handleRemoveItem = (id) =>{
         removeItem(id);
@@ -30,6 +36,7 @@ const CartView = () => {
                 ))}
             </ul>
             <p>Total: {getTotalPrice()}€</p>
+            <button onClick={handleNavigate}>Go to checkout</button>
         </div>
     );
 };

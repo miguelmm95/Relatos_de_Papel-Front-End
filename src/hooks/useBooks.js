@@ -7,7 +7,6 @@ export const useBooks = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            console.log("Books:", BookList);
             setBooks(BookList);
         }, 2500);
     }, []);
