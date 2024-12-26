@@ -17,7 +17,7 @@ export const BookRouter = () => {
             <Route path="/books" element={<Layout><Overview /></Layout>} />
             <Route path="/books/:id" element={<Layout><BookDetails /></Layout>} />
             <Route path="/Cart" element={<Layout><CartView /></Layout>} />
-            <Route path="/Checkout" element={<Checkout />}/>
+            <Route path="/Checkout" element={<Layout><Checkout /></Layout>}/>
             <Route path="*" element={<NotFound />} />
         </Routes>
     </BrowserRouter>

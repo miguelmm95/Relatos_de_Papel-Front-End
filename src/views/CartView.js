@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
+import "../styles/Cart.css";
 
 const CartView = () => {
     
@@ -23,20 +24,20 @@ const CartView = () => {
     };
 
     return(
-        <div>
-            <h1>Shopping Cart</h1>
-            <p> Total items: {cartLenght}</p>
-            <ul>
+        <div className="cart_container">
+            <h1 className="cart_title">Shopping Cart</h1>
+            <p className="cart_text"> Total items: {cartLenght}</p>
+            <ul className="cart_list">
                 {cart.map(item => (
                     <li key={item.id}>
                         {item.title} - {item.amount}
-                        <button onClick={() => handleAddItem(item.id)}>+</button>
-                        <button onClick={() => handleRemoveItem(item.id)}>-</button>
+                        <button className="cart_button" onClick={() => handleAddItem(item.id)}>+</button>
+                        <button className="cart_button" onClick={() => handleRemoveItem(item.id)}>-</button>
                     </li>
                 ))}
             </ul>
-            <p>Total: {getTotalPrice()}€</p>
-            <button onClick={handleNavigate}>Go to checkout</button>
+            <p className="cart_total">Total: {getTotalPrice()}€</p>
+            <button className="cart_checkout_button" onClick={handleNavigate} disabled={cart.length === 0}>Go to checkout</button>
         </div>
     );
 };
