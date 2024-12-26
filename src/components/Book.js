@@ -5,6 +5,7 @@ import useFavorites from "../hooks/useFavorites";
 import "../styles/BookCard.css";
 
 export const Book = ({id, title, author, img, score, price, showFavorite }) => {
+
     const navigate = useNavigate();
     const { addToCart } = useContext(CartContext);
     const { favorites, addFavorite, removeFavorite } = useFavorites();

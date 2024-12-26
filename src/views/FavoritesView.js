@@ -7,9 +7,9 @@ const FavoritesView = () => {
     const { favorites, removeFavorite } = useFavorites();
 
     return (
-        <div className="favorites_container">
+        <div>
             <h1 className="favorites_title">My Favorite Books</h1>
-            <div className="favorites_list">
+            <div className="favorites_container">
                 {favorites.length > 0 ? (
                     favorites.map((book) => (
                         <div key={book.id} className="favorite_book">

@@ -10,7 +10,7 @@ const useFavorites = () => {
 
     const addFavorite = (book) => {
         setFavorites((prevFavorites) => {
-            if(prevFavorites.find((favorite) => favorite.id === book.id)){
+            if(prevFavorites.find((favorite) => favorite.id === book.id)){          //Avoid duplicates
                 return prevFavorites;
             }
             const updatedFavorites = [...prevFavorites, book];
@@ -26,6 +26,7 @@ const useFavorites = () => {
             if (index !== -1) {
                 favoritesData.splice(index, 1);
             }
+            console.log(favoritesData);
             return updatedFavorites;
         })
     };

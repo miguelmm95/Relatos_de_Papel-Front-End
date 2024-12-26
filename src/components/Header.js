@@ -7,6 +7,7 @@ export const Header = () => {
 
   const navigate = useNavigate();
   const { cart, cartLenght } = useContext(CartContext);
+  const { getTotalPrice } = useContext(CartContext);
   const [isCartVisible, setIsCartVisible] = useState(false);
 
   const handleClick = () => {
@@ -40,13 +41,23 @@ export const Header = () => {
               <p className="header_cart_length">{cartLenght}</p>
               {isCartVisible && (
                 <div className="header_cart_preview">
-                  <ul>
-                    {cart.map(item => (
-                      <li>
-                        {item.title} - {item.amount}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="header_cart_header">
+                    <h3>Cart</h3>
+                  </div>
+                  {cartLenght > 0 ? (
+                    <ul>
+                      {cart.map(item => (
+                        <li>
+                          {item.title} - {item.amount}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p>Cart is empty</p>
+                  )}
+                  <div className="header_cart_footer">
+                      <p>Total: {getTotalPrice()}€</p>
+                  </div>
                 </div>
               )}
             </div>

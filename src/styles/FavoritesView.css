@@ -1,40 +1,54 @@
+.general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 .favorites_container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* Two cards per row */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the container */
+    justify-items: center; /* Center the cards horizontally */
+    background-color: #2c2a2a;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    min-height: 100vh;
 }
 
 .favorites_title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    color: yellowgreen;
+    background-color: #2c2a2a;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box;
 }
 
-.favorites_list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
 
 .favorite_book {
     position: relative;
 }
 
 .remove_button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
+    background-color: red; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 5px 10px; /* Padding inside button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 10px; /* Space above button */
+    display: block; /* Make the button a block element */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    width: 80px; /* Set a fixed width for the button */
+    text-align: center;
 }
 
 .remove_button:hover {
