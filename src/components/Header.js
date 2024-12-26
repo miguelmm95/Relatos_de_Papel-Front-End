@@ -13,6 +13,10 @@ export const Header = () => {
     navigate("/Cart");
   };
 
+  const handleGoToFavorites = () => {
+    navigate("/FavoritesView");
+  };
+
   const handleMouse = () => {
     setIsCartVisible(!isCartVisible);
   };
@@ -24,6 +28,7 @@ export const Header = () => {
   return (
     <div className="header">
         <h1 className="header_text" onClick={handleNavigate}>Relatos de papel</h1>
+        <p className="header_text" onClick={handleGoToFavorites}>Libros Favoritos</p>
         <div className="header_searchBar">
             <input className="header_searchBar_text" type="text" placeholder="Buscar..." />
             <button className="header_searchBar_button">Buscar</button>

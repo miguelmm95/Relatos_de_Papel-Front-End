@@ -49,6 +49,26 @@
     font-weight: bold;
 }
 
+.book_card_header {
+    display: flex;
+    align-items: center;
+}
+
+.book_card_header h3 {
+    margin-right: 10px; /* Space between title and star icon */
+}
+
+.book_card_header i {
+    margin-top: -5px;
+    margin-left: 10px; /* Space between star icon and text */
+    background-color: rgb(50, 143, 50);
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    color: gold;
+}
+
 #book_card_addToCart{
     background-color: rgb(50, 143, 50); /* Green background color */
     color: white; /* White text color */

@@ -26,6 +26,7 @@ export const Overview = () => {
                             synopsis={book.synopsis}
                             score={book.score}
                             price={book.price}
+                            showFavorite={true}
                         />
                     ))
                 ) : (
