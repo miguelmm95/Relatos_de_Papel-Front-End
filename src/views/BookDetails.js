@@ -20,17 +20,14 @@ export const BookDetails = () => {
 
     return (
         <div className="bookDetails_container">
-            <div className="bookDetails_header">
-                
-            </div>
             <div className="bookDetails_info">
-                <h1 className="bookDetails_title">{book.title}</h1>
                 <img className="bookDetails_img" src={book.img} alt={book.title} />
-                <button className="bookDetails_addToCart" onClick={handleAddToCart}>Add to cart</button>
-                <p className="bookDetails_author">Author: {book.author}</p>
-                <p className="bookDetails_score">Score: {book.score}</p>
-                <p className="bookDetails_price">Price: {book.price}€</p>
+                <h1 className="bookDetails_title">{book.title}</h1>
+                <p className="bookDetails_author">{book.author}</p>
             </div>
+            <p className="bookDetails_score">Score: {book.score}</p>
+            <p className="bookDetails_price">Price: {book.price}€</p>
+            <button className="bookDetails_addToCart" onClick={handleAddToCart}>Add to cart</button>
             <div className="bookDetails_synopsis">
                 <p>{book.synopsis}</p>
             </div>
