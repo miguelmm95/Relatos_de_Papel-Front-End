@@ -1,11 +1,10 @@
 import React from 'react';
 import { BookContext } from './context/BookContext';
-import BookRouter from './router/Router.js';
+import BookRouter from './router/Router';
 import { useBooks } from './hooks/useBooks';
 import { CartProvider } from './context/CartContext';
 
 function App() {
-
   const books = useBooks();
 
   return (
