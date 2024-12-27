@@ -36,10 +36,11 @@ body, html {
 
 .bookDetails_info {
     display: flex; /* Display items in a row */
-    flex-direction: row;
-    width: 60%;
+    flex-direction: row; /* Change to row to align elements horizontally */
+    align-items: flex-start; /* Align items to the start */
+    width: 60%; /* Adjust width to take full width */
     margin-bottom: 20px; /* Space between info and synopsis */
-    gap: 40px; /* Space between image and content */
+    gap: 20px; /* Space between elements */
 }
 
 .bookDetails_info p {
@@ -66,6 +67,7 @@ body, html {
     margin: 0;
     font-size: 3em; /* Increased font size */
     color: yellowgreen;
+    align-self: flex-start; /* Align title to the start of the content */
 }
 
 .bookDetails_author,
@@ -87,7 +89,11 @@ body, html {
 }
 
 .bookDetails_synopsis {
+    top: 20px;
+    width: 100%; /* Adjust width to take full width */
+    margin-left: 0; /* Remove left margin */
     font-size: 1.5em; /* Increased font size */
     color: #666;
-    margin-top: 20px; /* Increased margin */
+    z-index: 10;
+    margin-top: 10px; /* Adjust top margin as needed */
 }

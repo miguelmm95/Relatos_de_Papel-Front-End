@@ -25,7 +25,7 @@ export const Checkout = () => {
                 ))}
             </ul>
             <p className="checkout_total">Total: {getTotalPrice()}€</p>
-            <button onClick={() => navigate("/Cart")}>Go back to cart</button>
+            <button className="checkout_back_button" onClick={() => navigate("/Cart")}>Go back to cart</button>
             <button className="checkout_button" onClick={handleCheckout}>Checkout</button>
         </div>
     );

@@ -22,15 +22,17 @@ export const BookDetails = () => {
         <div className="bookDetails_container">
             <div className="bookDetails_info">
                 <img className="bookDetails_img" src={book.img} alt={book.title} />
-                <h1 className="bookDetails_title">{book.title}</h1>
-                <p className="bookDetails_author">{book.author}</p>
+                <div className="bookDetails_content">
+                    <h1 className="bookDetails_title">{book.title}</h1>
+                    <p className="bookDetails_author">{book.author}</p>
+                    <div className="bookDetails_synopsis">
+                        <p>{book.synopsis}</p>
+                    </div>
+                </div>
             </div>
             <p className="bookDetails_score">Score: {book.score}</p>
             <p className="bookDetails_price">Price: {book.price}€</p>
             <button className="bookDetails_addToCart" onClick={handleAddToCart}>Add to cart</button>
-            <div className="bookDetails_synopsis">
-                <p>{book.synopsis}</p>
-            </div>
         </div>
     );
 };

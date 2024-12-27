@@ -31,8 +31,10 @@ const CartView = () => {
                 {cart.map(item => (
                     <li key={item.id}>
                         {item.title} - {item.amount}
-                        <button className="cart_button" onClick={() => handleAddItem(item.id)}>+</button>
-                        <button className="cart_button" onClick={() => handleRemoveItem(item.id)}>-</button>
+                        <div className="cart_button_container">
+                            <button className="cart_button" onClick={() => handleAddItem(item.id)}>+</button>
+                            <button className="cart_button" onClick={() => handleRemoveItem(item.id)}>-</button>
+                        </div>
                     </li>
                 ))}
             </ul>
