@@ -1,10 +1,6 @@
-import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { BookContext } from "../context/BookContext";
+import React from "react";
 import { Book } from "../components/Book";
 import { useBooks } from "../hooks/useBooks";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
 import "../styles/Overview.css";
 
 export const Overview = () => {
