@@ -25,7 +25,7 @@ const FavoritesView = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No hay libros favoritos</p>
+                    <p className='favorites_empty'>No hay libros favoritos</p>
                 )}
             </div>
         </div>
