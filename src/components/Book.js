@@ -45,8 +45,8 @@ export const Book = ({id, title, author, img, score, price, showFavorite }) => {
                         <i id="book_card_star" className={`bi ${isFavorite ? "bi-star-fill" : "bi-star"}`} onClick={handleAddToFavorite}></i>
                     )}
                 </div>
-                <p>Author: {author}</p>
-                <p>Score: {score}</p>
+                <p>Autor: {author}</p>
+                <p>Puntuación: {score}</p>
                 <p>{price}€</p>
                 <i id="book_card_addToCart" class="bi bi-cart-plus-fill" onClick={handleAddToCart}></i>
             </div>

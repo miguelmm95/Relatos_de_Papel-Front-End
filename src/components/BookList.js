@@ -21,7 +21,7 @@ export const BookList = [
         year: "2016",
         author: "Brandon Sanderson",
         img: img2,
-        synopsis: "",
+        synopsis: "En Roshar, un mundo de piedra y tormentas, extrañas tempestades de increíble potencia barren el rocoso territorio de tal manera que han dado forma a una nueva civilización en la que la magia es un recurso común y la guerra permanente. Ahí, Dalinar Kholin, comandante de uno de los ejércitos, está fascinado por un antiguo texto llamado El camino de los reyes. Mientras tanto, en la oscuridad de la superficie, empieza a tomar forma una nueva tormenta.",
         score: 4.7,
         price: 25
     },

@@ -1,5 +1,6 @@
 import React from "react";
 import { useRedirection } from "../hooks/useRedirection";
+import "../styles/Landing.css";
 
 function Landing() {
 

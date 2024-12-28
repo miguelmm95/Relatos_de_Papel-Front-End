@@ -9,7 +9,7 @@ export const Overview = () => {
 
     return (
         <div>
-            <h1 className="overview_title">Books</h1>
+            <h1 className="overview_title">Libros</h1>
             <div className="ovewrview_container">
                 {books.length > 0 ? (
                     books.map((book, index) => (
@@ -26,7 +26,7 @@ export const Overview = () => {
                         />
                     ))
                 ) : (
-                    <h2>LOADING BOOKS...</h2>
+                    <h2>CARGANDO LIBROS...</h2>
                 )
             }
 

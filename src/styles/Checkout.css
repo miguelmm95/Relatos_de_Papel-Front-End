@@ -6,6 +6,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-height: 100vh;
+    margin-top: 20px; /* Add margin to the top */
+    margin-bottom: 20px; /* Add margin to the bottom */
 }
 
 .checkout_title {

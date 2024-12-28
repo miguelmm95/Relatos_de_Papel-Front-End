@@ -26,7 +26,6 @@ const useFavorites = () => {
             if (index !== -1) {
                 favoritesData.splice(index, 1);
             }
-            console.log(favoritesData);
             return updatedFavorites;
         })
     };

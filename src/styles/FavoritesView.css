@@ -54,3 +54,10 @@
 .remove_button:hover {
     background-color: darkred;
 }
+
+.favorites_container p {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}

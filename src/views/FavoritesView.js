@@ -8,7 +8,7 @@ const FavoritesView = () => {
 
     return (
         <div>
-            <h1 className="favorites_title">My Favorite Books</h1>
+            <h1 className="favorites_title">Mis libros favoritos</h1>
             <div className="favorites_container">
                 {favorites.length > 0 ? (
                     favorites.map((book) => (
@@ -25,7 +25,7 @@ const FavoritesView = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No favorite books yet.</p>
+                    <p>No hay libros favoritos</p>
                 )}
             </div>
         </div>
